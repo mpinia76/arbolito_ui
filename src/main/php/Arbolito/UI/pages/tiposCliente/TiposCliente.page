@@ -1,0 +1,13 @@
+<rasty specificationClass="Arbolito\UI\pages\tiposCliente\TiposCliente" templateLocation="pages/tiposCliente/TiposCliente.htm">
+
+	<param name="layoutType" value="str:ArbolitoMetroLayout" />
+
+	<component id="tiposClienteFilter" type="TipoClienteFilter">
+		<param name="gridModelClazz" value="modelClazz" />
+		<param name="uicriteriaClazz" value="uicriteriaClazz" />
+		<param name="legend" value="msg:tipoCliente.buscar" />
+		<param name="legendAgain" value="msg:tipoCliente.buscar.again" />
+		<param name="resultDiv" value="str:searchdiv" />
+	</component>
+
+</rasty>

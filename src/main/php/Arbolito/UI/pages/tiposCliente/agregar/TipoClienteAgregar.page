@@ -1,0 +1,14 @@
+<rasty specificationClass="Arbolito\UI\pages\tiposCliente\agregar\TipoClienteAgregar" templateLocation="pages/tiposCliente/agregar/TipoClienteAgregar.htm">
+
+	<param name="layoutType" value="str:ArbolitoMetroLayout" />
+
+	<component id="tipoClienteForm" type="TipoClienteForm">
+		<param name="legend" value="msg:tipoCliente.agregar.legend" />
+		<param name="backToOnSuccess" value="get:backTo" />
+		<param name="backToOnCancel" value="get:backTo" />
+		<param name="action" value="linkActionAgregarTipoCliente" />
+		<param name="method" value="str:post" />
+		<param name="tipoCliente" value="tipoCliente" />
+	</component>
+
+</rasty>

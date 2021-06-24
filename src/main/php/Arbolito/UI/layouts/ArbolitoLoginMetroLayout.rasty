@@ -1,0 +1,6 @@
+<rasty specificationClass="Arbolito\UI\layouts\ArbolitoLoginMetroLayout" templateLocation="ArbolitoLoginMetroLayout.htm">
+
+<component id="footer" type="FooterArbolito">
+	</component>
+
+</rasty>

@@ -1,0 +1,12 @@
+<rasty specificationClass="Arbolito\UI\layouts\ArbolitoMetroLayout" templateLocation="ArbolitoMetroLayout.htm">
+
+	<param name="menuGroups" value="menuGroups" />
+
+	<component id="header" type="HeaderNavMetro">
+		<param name="pageMenuGroups" value="menuGroups" />
+	</component>
+
+	<component id="footer" type="FooterArbolito">
+	</component>
+
+</rasty>

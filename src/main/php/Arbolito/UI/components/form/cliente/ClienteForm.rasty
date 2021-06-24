@@ -1,0 +1,118 @@
+<rasty specificationClass="Arbolito\UI\components\form\cliente\ClienteForm" templateLocation="ClienteForm.htm">
+
+	<param name="error" value="get:error" />
+
+
+
+	<component id="backSuccess" type="InputHidden">
+		<param name="inputId" value="str:backToOnSuccess" />
+		<param name="name" value="str:backToOnSuccess" />
+		<param name="value" value="backToOnSuccess" />
+	</component>
+
+	<component id="oid" type="InputHidden">
+		<param name="inputId" value="str:oid" />
+		<param name="name" value="str:oid" />
+		<param name="value" value="cliente.oid" />
+	</component>
+
+
+	<component id="nombre" type="InputText">
+		<param name="inputId" value="str:nombre" />
+		<param name="name" value="str:nombre" />
+		<param name="value" value="cliente.nombre" />
+		<param name="requiredMessage" value="msg:cliente.nombre.required" />
+		<param name="placeholder" value="msg:cliente.nombre" />
+		<param name="autocomplete" value="str:off" />
+
+	</component>
+
+    <component id="nroSocio" type="InputNumber">
+    		<param name="inputId" value="str:nroSocio" />
+    		<param name="name" value="str:nroSocio" />
+    		<param name="value" value="cliente.nroSocio" />
+            <param name="requiredMessage" value="msg:cliente.nroSocio.required" />
+    		<param name="placeholder" value="msg:cliente.nroSocio" />
+    		<param name="autocomplete" value="str:off" />
+
+    	</component>
+
+
+	<component id="tipoDocumento" type="InputCombo">
+		<param name="inputId" value="str:tipoDocumento" />
+		<param name="name" value="str:tipoDocumento" />
+		<param name="value" value="cliente.tipoDocumento" />
+		<param name="options" value="tiposDocumento" />
+		<param name="placeholder" value="msg:cliente.tipoDocumento" />
+	</component>
+
+
+	<component id="documento" type="InputText">
+		<param name="inputId" value="str:documento" />
+		<param name="name" value="str:documento" />
+		<param name="value" value="cliente.documento" />
+		<param name="placeholder" value="msg:cliente.documento" />
+	</component>
+
+
+
+    <component id="tipoCliente" type="InputCombo">
+    		<param name="inputId" value="str:tipoCliente" />
+    		<param name="name" value="str:tipoCliente" />
+    		<param name="value" value="cliente.tipoCliente" />
+    		<param name="options" value="tiposCliente" />
+    		<param name="finder" value="tipoClienteFinderClazz" />
+    		<param name="placeholder" value="msg:cliente.tipoCliente" />
+    	</component>
+
+
+	<component id="nacimiento" type="InputDate">
+		<param name="inputId" value="str:nacimiento" />
+		<param name="name" value="str:nacimiento" />
+		<param name="value" value="cliente.nacimiento" />
+		<param name="placeholder" value="msg:cliente.nacimiento" />
+		<param name="format" value="str:d/m/Y" />
+	</component>
+
+
+
+	<component id="telefono" type="InputText">
+		<param name="inputId" value="str:telefono" />
+		<param name="name" value="str:telefono" />
+		<param name="value" value="cliente.telefono" />
+		<param name="placeholder" value="msg:cliente.telefono" />
+	</component>
+
+
+
+	<component id="mail" type="InputText">
+		<param name="inputId" value="str:mail" />
+		<param name="name" value="str:mail" />
+		<param name="value" value="cliente.mail" />
+		<param name="placeholder" value="msg:cliente.mail" />
+		<param name="checkEmail" value="str:1" />
+        <param name="invalidEmailMessage" value="msg:cliente.mail.invalid" />
+	</component>
+
+	<component id="direccion" type="InputText">
+		<param name="inputId" value="str:direccion" />
+		<param name="name" value="str:direccion" />
+		<param name="value" value="cliente.direccion" />
+		<param name="placeholder" value="msg:cliente.direccion" />
+	</component>
+
+	<component id="observaciones" type="InputTextArea">
+		<param name="inputId" value="str:observaciones" />
+		<param name="name" value="str:observaciones" />
+		<param name="value" value="cliente.observaciones" />
+		<param name="placeholder" value="msg:cliente.observaciones" />
+		<param name="rows" value="str:5" />
+	</component>
+
+
+
+
+
+
+
+</rasty>

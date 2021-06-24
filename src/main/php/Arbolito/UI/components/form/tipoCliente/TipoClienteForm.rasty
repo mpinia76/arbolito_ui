@@ -1,0 +1,37 @@
+<rasty specificationClass="Arbolito\UI\components\form\tipoCliente\TipoClienteForm" templateLocation="TipoClienteForm.htm">
+
+	<param name="error" value="get:error" />
+
+	<component id="backSuccess" type="InputHidden">
+		<param name="inputId" value="str:backToOnSuccess" />
+		<param name="name" value="str:backToOnSuccess" />
+		<param name="value" value="backToOnSuccess" />
+	</component>
+
+	<component id="oid" type="InputHidden">
+		<param name="inputId" value="str:oid" />
+		<param name="name" value="str:oid" />
+		<param name="value" value="tipoCliente.oid" />
+	</component>
+
+
+	<component id="nombre" type="InputText">
+		<param name="inputId" value="str:nombre" />
+		<param name="name" value="str:nombre" />
+		<param name="value" value="tipoCliente.nombre" />
+		<param name="requiredMessage" value="msg:tipoCliente.nombre.required" />
+		<param name="placeholder" value="msg:tipoCliente.nombre" />
+		<param name="autocomplete" value="str:off" />
+
+	</component>
+
+	<component id="pagaCuota" type="InputCheckBox">
+    		<param name="inputId" value="str:pagaCuota" />
+    		<param name="name" value="str:pagaCuota" />
+    		<param name="value" value="str:pagaCuota" />
+    		<param name="isChecked" value="tipoCliente.pagaCuota" />
+    	</component>
+
+
+
+</rasty>

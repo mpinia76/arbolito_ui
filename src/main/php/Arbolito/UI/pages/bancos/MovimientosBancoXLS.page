@@ -1,0 +1,12 @@
+<rasty specificationClass="Arbolito\UI\pages\bancos\MovimientosBancoXLS" templateLocation="pages/bancos/MovimientosBancoXLS.htm">
+
+	<param name="layoutType" value="str:ArbolitoXLSLayout" />
+
+
+
+
+	 <component id="movimientosXLS" type="MovimientosXLS">
+
+	</component>
+
+</rasty>

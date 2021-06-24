@@ -1,0 +1,16 @@
+<rasty specificationClass="Arbolito\UI\pages\tiposCliente\modificar\TipoClienteModificar" templateLocation="pages/tiposCliente/modificar/TipoClienteModificar.htm">
+
+	<param name="layoutType" value="str:ArbolitoMetroLayout" />
+	<param name="tipoClienteOid" value="get:oid" />
+
+
+	<component id="tipoClienteForm" type="TipoClienteForm">
+		<param name="legend" value="msg:tipoCliente.modificar.legend" />
+		<param name="action" value="linkActionModificarTipoCliente" />
+		<param name="method" value="str:post" />
+		<param name="backToOnSuccess" value="get:backTo" />
+		<param name="backToOnCancel" value="get:backTo" />
+		<param name="tipoCliente" value="tipoCliente" />
+	</component>
+
+</rasty>

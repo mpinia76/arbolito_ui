@@ -1,0 +1,12 @@
+<rasty specificationClass="Arbolito\UI\pages\home\AdminHome" templateLocation="pages/home/AdminHome.htm">
+
+	<param name="layoutType" value="str:ArbolitoHomeMetroLayout" />
+
+
+
+
+	<!-- <component id="ultimosMovimientosCaja" type="UltimosMovimientos">
+		<param name="cuenta" value="caja" />
+	</component> -->
+
+</rasty>

@@ -1,0 +1,87 @@
+<!-- BEGIN:main -->
+<html>
+<head>
+  <style>
+      body {
+          background-image: url("{APP_PATH}/css/images/background.jpg");
+          background-size: 815px 1055px;
+      }
+      @page {
+          margin-top: 0px !important;
+          margin-bottom: 0px !important;
+          margin-left: 0px !important;
+          margin-right: 0px !important;
+      }
+
+      #header { position: fixed; left: 180px; top: 72px; right: 0px; }
+      #footer { position: fixed; left: 0px; bottom: -5px; right: 0px; height: 2px;  }
+      #footer .page:after { content: counter(page); }
+      #content { position: fixed; left: 280px; top: 385px; right: 0px; page-break-after: auto;}
+      #divDevoluciones { page-break-before: always;}
+  </style>
+  </head>
+<body>
+  <div id="header">
+      <table>
+          <tr>
+              <td width="450px">
+                  <p style="font-size:14pt;font-weight: bold;font-family: 'Open Sans', sans-serif; color: #FFFFFF">RECIBO DE COBRO</p>
+
+              </td>
+              <td width="300px" >
+                  <p style="font-size:12pt;font-family: 'Open Sans', sans-serif; margin-left: 20px;text-align: right;margin-right: 170px;margin-top: 25px;">
+                      {nroComprobante} </p>
+              </td>
+          </tr>
+
+
+      </table>
+
+  </div>
+  <div id="footer" style="padding-top: 10px; border-top: 1px solid #ddd; font-size:13px; color: #333; margin-top: 20px;">
+
+
+  </div>
+  <div id="content">
+      <table>
+          <tr>
+              <td>
+                  <p style="font-size:12pt;font-weight: bold;font-family: 'Open Sans', sans-serif;">{fecha}</p>
+
+              </td>
+
+          </tr>
+          <tr>
+              <td>
+                  <p style="font-size:12pt;font-weight: bold;font-family: 'Open Sans', sans-serif; margin-top: 18px;">{cliente}</p>
+
+              </td>
+
+          </tr>
+          <tr>
+              <td>
+                  <p style="font-size:12pt;font-weight: bold;font-family: 'Open Sans', sans-serif; margin-top: 18px;margin-left: 60px;">{nroSocio}</p>
+
+              </td>
+
+          </tr>
+          <tr>
+              <td>
+                  <p style="font-size:12pt;font-weight: bold;font-family: 'Open Sans', sans-serif; margin-top: 14px;margin-left: 100px;">{total}</p>
+
+              </td>
+
+          </tr>
+          <tr>
+              <td>
+                  <p style="font-size:12pt;font-weight: bold;font-family: 'Open Sans', sans-serif; margin-top: 14px;margin-left: 100px;">
+                      {detalle}</p>
+
+              </td>
+
+          </tr>
+      </table>
+  </div>
+</body>
+</html>
+<!-- END:main -->
