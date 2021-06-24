@@ -2,9 +2,9 @@
 
 	"common.campos_obligatorios":"Campos requeridos",
 
-	"app.title":"Unión Social y Deportiva Arbolito",
+	"app.title":"Unión Social Arbolito",
 
-	"app.pdf.footer":"Unión Social y Deportiva Arbolito",
+	"app.pdf.footer":"Unión Social Arbolito",
 
 	"menu.page":"Opciones de la página",
 	"menu.main":"Menú de navegación",
@@ -393,8 +393,8 @@
 	"cliente.ayuda.popup": "Si te resulta más práctico, puedes<br />utilizar la lupa para hacer una búsqueda avanzada.",
 	"cliente.ayuda.add":"Si no encuentras al socio, utiliza<br />el '+' para ingresar sus datos y registrarlo en el sistema",
 
-	"login.title":"Unión Social y Deportiva Arbolito",
-	"login.titulo":"Unión Social y Deportiva Arbolito",
+	"login.title":"Unión Social Arbolito",
+	"login.titulo":"Unión Social Arbolito",
 	"login.subtitulo":"Sistema de gestión",
 
 	"login.iniciar_sesion":"Iniciar sesión",
@@ -406,7 +406,7 @@
 	"login.invalid_password": "La clave ingresada no es válida",
 	"login.user_not_found": "El usuario ingresado no es válido",
 
-	"admin_home.title": "Unión Social y Deportiva Arbolito",
+	"admin_home.title": "Unión Social Arbolito",
 	"admin_home.subtitle": "Administración",
 
 	"admin_home.informes": "Informes",
