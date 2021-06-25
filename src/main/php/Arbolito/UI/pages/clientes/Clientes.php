@@ -100,6 +100,13 @@ class Clientes extends ArbolitoPage{
 		$clienteFilter = $this->getComponentById("clientesFilter");
 
 		$clienteFilter->fillFromSaved( $this->getClienteCriteria() );
+
+        $xtpl->assign("linkPdf", $this->getLinkClientesPdf() );
+        $xtpl->assign("linkXls", $this->getLinkClientesXls() );
+
+        $xtpl->parse("main.opciones.add");
+        $xtpl->parse("main.opciones");
+
 	}
 
 	public function getClienteCriteria()

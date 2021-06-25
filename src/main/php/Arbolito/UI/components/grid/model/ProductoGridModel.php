@@ -168,7 +168,7 @@ class ProductoGridModel extends EntityGridModel{
 	}
 
 	public function getHeaderContent(){
-		$filter = $this->getFilter();
+		/*$filter = $this->getFilter();
 		$filter->fill( $this->getDefaultOrderField(), $this->getDefaultOrderType() );
 
 		$service = $this->getService();
@@ -178,7 +178,7 @@ class ProductoGridModel extends EntityGridModel{
 
 
 
-		return 'Total: '.ArbolitoUIUtils::formatMontoToView($service->getTotales($filter->getCriteria()));
+		return 'Total: '.ArbolitoUIUtils::formatMontoToView($service->getTotales($filter->getCriteria()));*/
 	}
 
 }

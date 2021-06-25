@@ -1,0 +1,12 @@
+<rasty specificationClass="Arbolito\UI\pages\clientes\ClientesXLS" templateLocation="pages/clientes/ClientesXLS.htm">
+
+	<param name="layoutType" value="str:ArbolitoXLSLayout" />
+
+
+
+
+	 <component id="clientesXLS" type="ClientesXLS">
+
+	</component>
+
+</rasty>

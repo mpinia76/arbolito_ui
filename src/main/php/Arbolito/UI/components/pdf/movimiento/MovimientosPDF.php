@@ -77,7 +77,7 @@ class MovimientosPDF extends RastyComponent{
         $movimientos = UIServiceFactory::getUIMovimientoCuentaService()->getList($movimientoCriteria);
         //print_r($movimientos);
         foreach ($movimientos as $movimiento) {
-            echo $movimiento->getDebe();
+            //echo $movimiento->getDebe();
             $xtpl->assign( "fechaHora", ArbolitoUIUtils::formatDateTimeToView($movimiento->getFechaHora()) );
             $xtpl->assign( "concepto", $movimiento->getDescripcion() );
 

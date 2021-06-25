@@ -1,0 +1,47 @@
+<!-- BEGIN:main -->
+<html>
+
+<head>
+
+  </head>
+<body>
+
+
+
+    <table>
+        <tr>
+            <td colspan="5">
+                <span style="font-size:16pt;font-weight: bold;">{fecha}</span>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="5">
+                <span style="font-size:16pt;font-weight: bold;">Listado de socios {filtro}</span>
+            </td>
+        </tr>
+        <tr>
+
+        </tr>
+    </table>
+
+
+        <!-- BEGIN:clientes -->
+
+        <table cellspacing="0" cellpadding="0" border="1">
+
+            <tr><th>{lbl_nroSocio}</th><th>{lbl_cliente}</th><th>{lbl_tipoCliente}</th><th>{lbl_documento}</th><th>{lbl_telefono}</th><th>{lbl_domicilio}</th><th>{lbl_nacimiento}</th></tr>
+
+
+            <!-- BEGIN:detalle -->
+            <tr><td style="text-align: right;">{nroSocio}</td><td>{cliente}</td><td>{tipoCliente}</td><td>{documento}</td><td>{telefono}</td><td>{domicilio}</td><td>{nacimiento}</td></tr>
+            <!-- END:detalle -->
+
+
+        </table>
+
+        <!-- END:clientes -->
+
+
+</body>
+</html>
+<!-- END:main -->

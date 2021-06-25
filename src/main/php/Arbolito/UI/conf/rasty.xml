@@ -64,6 +64,8 @@
 	<page name="ClienteAgregar"   location="pages/clientes/agregar/ClienteAgregar.page" url="socios/agregar"/>
 	<page name="ClienteModificar"   location="pages/clientes/modificar/ClienteModificar.page" url="socios/modificar"/>
 
+    <page name="ClientesXLS"   location="pages/clientes/ClientesXLS.page" url="socios/sociosxls"/>
+
 	<page name="ClientesCtaCte"   location="pages/clientes/ClientesCtaCte.page" url="sociosCtaCte"/>
 
 	<page name="Proveedors"   location="pages/proveedors/Proveedors.page" url="proveedores"/>
@@ -230,10 +232,12 @@
 	<component name="PresupuestoPDF"   location="components/pdf/presupuesto"/>
     <component name="ProductosPDF"   location="components/pdf/producto"/>
     <component name="MovimientosPDF"   location="components/pdf/movimiento"/>
+    <component name="ClientesPDF"   location="components/pdf/cliente"/>
 
     <!-- xlss -->
     <component name="ProductosXLS"   location="components/xls/producto"/>
     <component name="MovimientosXLS"   location="components/xls/movimiento"/>
+    <component name="ClientesXLS"   location="components/xls/cliente"/>
 
 	<!-- layouts -->
 	<component name="ArbolitoMetroLayout" location="layouts" />

@@ -26,7 +26,7 @@
 	<td width="450px">
 
 		<p style="font-size:22pt;font-weight: bold;">{fecha}</p>
-        <p style="font-size:14pt;font-weight: bold;">Movimientos de la cuenta {cuenta}</p>
+        <p style="font-size:14pt;font-weight: bold;">Listado de Socios {filtro}</p>
         <p style="font-size:14pt;font-weight: bold;">{entreFechas}</p>
 
 	</td>
@@ -63,20 +63,20 @@
 
 <div class="box_details">
 
-	<!-- BEGIN:movimientos -->
+	<!-- BEGIN:clientes -->
 
 	<table cellspacing="0" cellpadding="0" border="1">
 
-		<tr><th>{lbl_fecha}</th><th>{lbl_concepto}</th><th>{lbl_haber}</th><th>{lbl_debe}</th><th>{lbl_saldo}</th></tr></thead>
+		<tr><th>{lbl_nroSocio}</th><th>{lbl_cliente}</th><th>{lbl_tipoCliente}</th><th>{lbl_documento}</th><th>{lbl_telefono}</th><th>{lbl_domicilio}</th><th>{lbl_nacimiento}</th></tr>
 
 			<!-- BEGIN:detalle -->
-			<tr><td width="80px">{fechaHora}</td><td width="420px">{concepto}</td><td style="text-align: right;">{haber}</td><td style="text-align: right;">{debe}</td><td style="text-align: right;">{saldo}</td></tr>
+			<tr><td width="80px" style="text-align: right;">{nroSocio}</td><td width="200px">{cliente}</td><td>{tipoCliente}</td><td>{documento}</td><td>{telefono}</td><td>{domicilio}</td><td>{nacimiento}</td></tr>
 			<!-- END:detalle -->
 
 
 	</table>
 
-	<!-- END:movimientos -->
+	<!-- END:clientes -->
 
 </div>
 
