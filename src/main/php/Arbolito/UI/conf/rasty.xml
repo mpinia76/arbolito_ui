@@ -187,7 +187,7 @@
 	<!-- filters -->
 
 	<component name="TipoProductoFilter"   location="components/filter/tipoProducto"/>
-    <component name="TipoSocioFilter"   location="components/filter/tipoCliente"/>
+    <component name="TipoClienteFilter"   location="components/filter/tipoCliente"/>
 	<component name="TipoDispositivoFilter"   location="components/filter/tipoDispositivo"/>
 	<component name="MarcaProductoFilter"   location="components/filter/marcaProducto"/>
 	<component name="IvaFilter"   location="components/filter/iva"/>
