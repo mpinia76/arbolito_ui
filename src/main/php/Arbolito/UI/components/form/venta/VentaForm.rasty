@@ -69,7 +69,15 @@
 		<param name="popupFormCallback" value="str:VentaAgregar" />
 	</component>
 
+    <component id="nroComprobante" type="InputNumber">
+        		<param name="inputId" value="str:nroComprobante" />
+        		<param name="name" value="str:nroComprobante" />
+        		<param name="value" value="venta.nroComprobante" />
 
+        		<param name="placeholder" value="msg:venta.nroComprobante" />
+        		<param name="autocomplete" value="str:off" />
+
+        	</component>
 
 	<component id="observaciones" type="InputText">
 		<param name="inputId" value="str:observaciones" />

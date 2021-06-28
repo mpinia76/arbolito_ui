@@ -528,5 +528,28 @@ class UIVentaService  implements IEntityGridService{
 
 		}
 	}
+
+    public function getUltimoComprobante( ){
+
+        try{
+
+            $uiCriteria = new UIVentaCriteria();
+            $uiCriteria->addOrder("nroComprobante", "DESC");
+            $uiCriteria->setRowPerPage(1);
+
+            $criteria = $uiCriteria->buildCoreCriteria() ;
+
+            $service = ServiceFactory::getVentaService();
+
+            $venta = $service->getSingleResult( $criteria );
+
+            return $venta;
+
+        } catch (\Exception $e) {
+
+            throw new RastyException($e->getMessage());
+
+        }
+    }
 }
 ?>

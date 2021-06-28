@@ -66,6 +66,7 @@ class VentaForm extends Form{
 		$this->addProperty("fecha");
 
 		$this->addProperty("cliente");
+        $this->addProperty("nroComprobante");
 		$this->addProperty("observaciones");
 
 		$this->setBackToOnSuccess("VentaCobrar");
@@ -129,6 +130,7 @@ class VentaForm extends Form{
 		$xtpl->assign("lbl_fecha", $this->localize("venta.fecha") );
 
 		$xtpl->assign("lbl_cliente", $this->localize("venta.cliente") );
+        $xtpl->assign("lbl_nroComprobante", $this->localize("venta.nroComprobante") );
 		$xtpl->assign("lbl_observaciones", $this->localize("venta.observaciones") );
 
 		$xtpl->assign("detalles_legend", $this->localize("venta.agregar.detalles_legend") );

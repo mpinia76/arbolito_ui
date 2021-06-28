@@ -28,6 +28,12 @@ class VentaAgregar extends ArbolitoPage{
 		//inicializamos el venta.
 		$venta = new Venta();
 
+
+        $ultimoComprobante = UIServiceFactory::getUIVentaService()->getUltimoComprobante();
+
+
+        $venta->setNroComprobante($ultimoComprobante->getNroComprobante()+1);
+
 		$venta->setFecha( new \Datetime() );
 
 		if(RastyUtils::getParamGET("clienteOid") ){
