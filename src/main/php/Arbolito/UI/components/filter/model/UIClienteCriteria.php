@@ -75,6 +75,25 @@ class UIClienteCriteria extends UIArbolitoCriteria{
 	}
 
 
+    private $nroSocioExacto;
+
+    /**
+     * @return mixed
+     */
+    public function getNroSocioExacto()
+    {
+        return $this->nroSocioExacto;
+    }
+
+    /**
+     * @param mixed $nroSocioExacto
+     */
+    public function setNroSocioExacto($nroSocioExacto)
+    {
+        $this->nroSocioExacto = $nroSocioExacto;
+    }
+
+
 	protected function newCoreCriteria(){
 		return new ClienteCriteria();
 	}
@@ -85,6 +104,7 @@ class UIClienteCriteria extends UIArbolitoCriteria{
 
 		$criteria->setNombre( $this->getNombre() );
 		$criteria->setNroSocio( $this->getNroSocio() );
+        $criteria->setNroSocioExacto( $this->getNroSocioExacto() );
         $criteria->setTipoCliente( $this->getTipoCliente() );
         $criteria->setDocumento( $this->getDocumento() );
 		$criteria->setTieneCtaCte( $this->getTieneCtaCte() );

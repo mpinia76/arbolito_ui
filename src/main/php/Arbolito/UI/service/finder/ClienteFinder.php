@@ -43,7 +43,7 @@ class ClienteFinder implements  IAutocompleteFinder {
 
 
         $uiCriteria = new UIClienteCriteria();
-        $uiCriteria->setNroSocio( $code );
+        $uiCriteria->setNroSocioExacto( $code );
 
         $oCliente = UIServiceFactory::getUIClienteService()->getByCriteria( $uiCriteria );
 
