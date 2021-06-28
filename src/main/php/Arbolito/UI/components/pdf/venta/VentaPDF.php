@@ -76,7 +76,7 @@ class VentaPDF extends RastyComponent{
 			$cantidadTotal = 0;
 			$total=0;
 			$combos = array();
-			$detalle = '';
+			$detalles = '';
 			foreach ($venta->getDetalles() as $detalle) {
 				if (!empty($detalle->getCombo())) {
 
@@ -111,13 +111,13 @@ class VentaPDF extends RastyComponent{
 					$total += $detalle->getSubtotal();
 					$cantidadTotal += $detalle->getCantidad();
 
-                    $detalle.=' '.$detalle->getProducto();
+                    $detalles.=$detalle->getProducto().' ';
 				}
 			}
 
 			$xtpl->assign( "total", ArbolitoUIUtils::formatMontoToView( $total ) );
 			$xtpl->assign( "cantidad_total", $cantidadTotal );
-            $xtpl->assign( "detalle", $detalle );
+            $xtpl->assign( "detalle", $detalles );
 
 			$cantidadTotal = 0;
 			$total=0;
