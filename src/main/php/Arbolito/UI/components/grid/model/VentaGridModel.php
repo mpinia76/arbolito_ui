@@ -9,6 +9,7 @@ use Arbolito\UI\components\grid\formats\GridEstadoVentaFormat;
 
 use Arbolito\UI\components\filter\model\UIVentaCriteria;
 
+use Arbolito\UI\components\grid\formats\GridVentaDetallesFormat;
 use Rasty\factory\ComponentConfig;
 use Rasty\factory\ComponentFactory;
 
@@ -82,13 +83,19 @@ class VentaGridModel extends EntityGridModel{
 		$column = GridModelBuilder::buildColumn( "cliente", "venta.cliente", 20, EntityGrid::TEXT_ALIGN_LEFT );
 		$this->addColumn( $column );
 
+        $column = GridModelBuilder::buildColumn( "detalles", "venta.detalles", 100, EntityGrid::TEXT_ALIGN_LEFT, new GridVentaDetallesFormat());
+
+        $this->addColumn( $column );
+
 		$column = GridModelBuilder::buildColumn( "monto", "venta.monto", 20, EntityGrid::TEXT_ALIGN_RIGHT, new GridImporteFormat() );
 		$column->setCssClass("importe");
 		$this->addColumn( $column );
 
-		$column = GridModelBuilder::buildColumn( "montoActualizado", "venta.montoActualizado", 20, EntityGrid::TEXT_ALIGN_RIGHT, new GridImporteFormat() );
+		/*$column = GridModelBuilder::buildColumn( "montoActualizado", "venta.montoActualizado", 20, EntityGrid::TEXT_ALIGN_RIGHT, new GridImporteFormat() );
 		$column->setCssClass("importe");
-		$this->addColumn( $column );
+		$this->addColumn( $column );*/
+
+
 
 		$column = GridModelBuilder::buildColumn( "montoPagado", "venta.montoPagado", 20, EntityGrid::TEXT_ALIGN_RIGHT, new GridImporteFormat() );
 		$column->setCssClass("importe");
