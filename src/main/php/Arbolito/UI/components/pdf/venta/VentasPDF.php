@@ -1,9 +1,9 @@
 <?php
 
-namespace Arbolito\UI\components\xls\venta;
+namespace Arbolito\UI\components\pdf\venta;
 
-use Datetime;
 use Arbolito\UI\utils\ArbolitoUIUtils;
+use Datetime;
 
 use Arbolito\UI\service\UIServiceFactory;
 
@@ -13,6 +13,8 @@ use Rasty\utils\RastyUtils;
 use Rasty\utils\XTemplate;
 
 use Arbolito\UI\components\filter\model\UIVentaCriteria;
+
+
 
 use Rasty\utils\LinkBuilder;
 use Rasty\render\DOMPDFRenderer;
@@ -25,29 +27,24 @@ use Arbolito\Core\model\EstadoVenta;
 
 
 /**
- * para renderizar en xls los ventas
+ * para renderizar en pdf listado de ventas.
  *
  * @author Marcos
  * @since 16-03-2022
  *
  */
-class VentasXLS extends RastyComponent{
+class VentasPDF extends RastyComponent{
 
 
 
 	public function getType(){
 
-		return "VentasXLS";
+		return "VentasPDF";
 
 	}
 
 	public function __construct(){
 
-
-	}
-
-	public function getFileName(){
-		"cuotas";
 
 	}
 
@@ -129,7 +126,7 @@ class VentasXLS extends RastyComponent{
 		$xtpl->assign("lbl_estado", $this->localize( "venta.estado" ) );
 
 
-		$ventas = UIServiceFactory::getUIVentaService()->getList($ventaCriteria);
+		$ventas = \Arbolito\UI\service\UIServiceFactory::getUIVentaService()->getList($ventaCriteria);
 		//print_r($ventas);
 		foreach ($ventas as $venta) {
 
@@ -161,6 +158,11 @@ class VentasXLS extends RastyComponent{
 
 
 
+
+
+
+
+
 	}
 
 
@@ -169,6 +171,10 @@ class VentasXLS extends RastyComponent{
 
 
 
+	public function getPDFRenderer(){
 
+		$renderer = new DOMPDFRenderer();
+		return $renderer;
+	}
 }
 ?>

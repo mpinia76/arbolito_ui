@@ -82,15 +82,17 @@ class Ventas extends ArbolitoPage{
 
 		$xtpl->assign("agregar_label", $this->localize("venta.agregar") );
 
-		$ventaFilter = $this->getComponentById("ventasFilter");
 
-		$ventaFilter->fillFromSaved( $this->getVentaCriteria() );
 
 		$xtpl->assign("linkPdf", $this->getLinkVentasPdf() );
 		$xtpl->assign("linkXls", $this->getLinkVentasXls() );
 
 		$xtpl->parse("main.opciones.add");
 		$xtpl->parse("main.opciones");
+
+		$ventaFilter = $this->getComponentById("ventasFilter");
+
+		$ventaFilter->fillFromSaved( $this->getVentaCriteria() );
 	}
 
 	public function getVentaCriteria()
