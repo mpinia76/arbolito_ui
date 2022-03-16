@@ -1,11 +1,41 @@
 <!-- BEGIN: main-->
+<script>
+	function listarVentas(  ){
+		$("#input_submit_ajax_Venta").click();
+		window.open('{linkPdf}','_blank');
+
+	}
+	function listarVentasXLS(  ){
+		$("#input_submit_ajax_Venta").click();
+		window.location.href='{linkXls}'
+
+
+	}
+</script>
 <div class="grid" >
 
     <div id="pedidos_filtros" class="grid_filters">
         
         <rasty id="ventasFilter" />
+	</div>
+		<!-- BEGIN: opciones -->
+		<div class="grid_filters_actions">
+
+
+			<!-- BEGIN: add -->
+			<button class="shortcut" onclick="listarVentas()">
+				<i class="icon-pdf"></i>{lbl_pdf}
+			</button>
+
+			<button class="shortcut" onclick="listarVentasXLS()">
+				<i class="icon-xls"></i>{lbl_pdf}
+			</button>
+			<!-- END: add -->
+
+		</div>
+		<!-- END: opciones -->
         
-    </div>
+
 
 	<br class="clear">
 

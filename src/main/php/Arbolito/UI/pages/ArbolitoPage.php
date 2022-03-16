@@ -740,5 +740,17 @@ public function getLinkActionPagarPedido(Pedido $pedido, Cuenta $cuenta, $backTo
 
     }
 
+	public function getLinkVentasPdf(){
+
+		return LinkBuilder::getPdfUrl( "VentasPDF") ;
+
+	}
+
+	public function getLinkVentasXls(){
+
+		return LinkBuilder::getPageUrl( "VentasXLS") ;
+
+	}
+
 }
 ?>

@@ -130,6 +130,8 @@
 
     <page name="MovimientosBancoXLS"   location="pages/bancos/MovimientosBancoXLS.page" url="movimientos/movimientosxls"/>
 
+	<page name="VentasXLS"   location="pages/ventas/VentasXLS.page" url="ventas/ventasxls"/>
+
 
 
     <!-- declaración de los componentes -->
@@ -233,11 +235,13 @@
     <component name="ProductosPDF"   location="components/pdf/producto"/>
     <component name="MovimientosPDF"   location="components/pdf/movimiento"/>
     <component name="ClientesPDF"   location="components/pdf/cliente"/>
+	<component name="VentasPDF"   location="components/pdf/venta"/>
 
     <!-- xlss -->
     <component name="ProductosXLS"   location="components/xls/producto"/>
     <component name="MovimientosXLS"   location="components/xls/movimiento"/>
     <component name="ClientesXLS"   location="components/xls/cliente"/>
+	<component name="VentasXLS"   location="components/xls/venta"/>
 
 	<!-- layouts -->
 	<component name="ArbolitoMetroLayout" location="layouts" />
