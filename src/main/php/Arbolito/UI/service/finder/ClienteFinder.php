@@ -55,7 +55,7 @@ class ClienteFinder implements  IAutocompleteFinder {
 	 * @see service/finder/Rasty\Forms\finder\model.IAutocompleteFinder::getAttributes()
 	 */
 	public function getAttributes(){
-		return array("nombre", "documento");
+		return array("nroSocio","nombre", "documento");
 	}
 
 	/**
@@ -63,7 +63,7 @@ class ClienteFinder implements  IAutocompleteFinder {
 	 * @see service/finder/Rasty\Forms\finder\model.IAutocompleteFinder::getAttributesCallback()
 	 */
 	public function getAttributesCallback(){
-		return array("oid", "nombre", "documento");
+		return array("oid", "nroSocio", "nombre", "documento");
 	}
 
 	/**
@@ -73,7 +73,7 @@ class ClienteFinder implements  IAutocompleteFinder {
 	function getEntityCode( $entity ){
 		if( !empty( $entity)  )
 
-		return $entity->getOid();
+		return $entity->getNroSocio();
 	}
 
 	/**
@@ -90,7 +90,7 @@ class ClienteFinder implements  IAutocompleteFinder {
 	 * @see service/finder/Rasty\Forms\finder\model.IAutocompleteFinder::getEntityFieldCode()
 	 */
 	function getEntityFieldCode( $entity ){
-		return "oid";
+		return "nroSocio";
 	}
 
 	/**
